@@ -562,12 +562,12 @@ footer .logo {
   cursor: pointer;
   outline: none;
 }
-.content-box a:hover .thumb::before,
-.content-box a:focus .thumb::before {
+.portfolio a:hover .thumb::before,
+.portfolio a:focus .thumb::before {
   opacity: 1;
 }
-.content-box a:hover .description,
-.content-box a:focus .description {
+.portfolio a:hover .description,
+.portfolio a:focus .description {
   opacity: 1;
 }
 .portfolio .content-box:not(:nth-child(3n)) {
