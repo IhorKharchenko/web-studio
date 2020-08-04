@@ -555,15 +555,19 @@ footer .logo {
 
   box-sizing: border-box;
 }
-.portfolio .content-box:hover {
+.portfolio a:hover,
+.portfolio a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  outline: none;
 }
-.content-box:hover .thumb::before {
+.content-box a:hover .thumb::before,
+.content-box a:focus .thumb::before {
   opacity: 1;
 }
-.content-box:hover .description {
+.content-box a:hover .description,
+.content-box a:focus .description {
   opacity: 1;
 }
 .portfolio .content-box:not(:nth-child(3n)) {
