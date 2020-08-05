@@ -21,7 +21,6 @@ html {
   --footer-background-color: #2f303a;
   --button-bg-color: #f5f4fa;
   --primary-icon-color: #afb1b8;
-  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   background-color: var(--primary-white-color);
@@ -71,8 +70,8 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  transition: background-color 250ms var(--time-function),
-    color 250ms var(--time-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -94,8 +93,8 @@ img {
   height: 44px;
   color: var(--primary-white-color);
   border-radius: 50%;
-  transition: background-color 250ms var(--time-function),
-    color 250ms var(--time-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social .icon {
   width: 20px;
@@ -164,7 +163,7 @@ header::after {
   color: var(--title-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color 250ms var(--time-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .item + .item {
   margin-left: 50px;
@@ -207,7 +206,7 @@ header::after {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  transition: color 250ms var(--time-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-nav .item + .item {
   margin-left: 30px;
@@ -414,8 +413,8 @@ main .section {
   border: 1px solid var(--primary-icon-color);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: border-color 250ms var(--time-function),
-    color 250ms var(--time-function);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .icon {
   fill: currentColor;
@@ -467,7 +466,7 @@ footer .logo {
   font-size: 14px;
   line-height: 1.71;
   color: var(--additional-white-color);
-  transition: color 250ms var(--time-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address .link:hover,
 .address .link:focus {
@@ -541,8 +540,8 @@ footer .logo {
   background-color: var(--button-bg-color);
   border: 0;
   border-radius: 4px;
-  transition: background-color 250ms var(--time-function),
-    color 250ms var(--time-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
@@ -560,7 +559,7 @@ footer .logo {
 .portfolio .content-box {
   width: calc((100% - 30px * 2) / 3);
   background: var(--primary-white-color);
-  transition: box-shadow 250ms var(--time-function);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: border-box;
   outline: none;
 }
@@ -623,7 +622,7 @@ footer .logo {
   background-color: rgba(33, 150, 243, 0.9);
   outline: none;
   transform: translateY(100%);
-  transition: transform 250ms var(--time-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .link:hover .thumb::before,
 .portfolio .link:focus .thumb::before {
@@ -645,7 +644,7 @@ footer .logo {
   color: var(--primary-white-color);
   outline: none;
   transform: translate(-50%, 100%);
-  transition: transform 250ms var(--time-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .link:hover .description,
