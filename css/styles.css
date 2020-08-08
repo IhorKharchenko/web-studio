@@ -151,6 +151,7 @@ header::after {
 .site-nav {
   display: flex;
   align-items: center;
+  perspective: 400px;
 }
 .site-nav .list {
   padding-top: 32px;
@@ -197,8 +198,6 @@ header::after {
   content: "";
   height: 4px;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--accent-color);
   border-radius: 2px;
   transform: scaleX(0);
@@ -206,7 +205,6 @@ header::after {
 }
 .site-nav .link:hover::after,
 .site-nav .link:focus::after {
-  color: var(--accent-color);
   outline: none;
   transform: scaleX(1);
 }
@@ -313,6 +311,7 @@ main .section {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--button-bg-color);
+  perspective: 400px;
 }
 .icon-antenna::before {
   background-image: url("../images/studio/antenna1.svg");
@@ -327,6 +326,10 @@ main .section {
   background-image: url("../images/studio/astronaut1.svg");
 }
 
+.features .content-box:hover::before {
+  transform: rotateY(360deg);
+  transition: transform 500ms var(--timing-function);
+}
 .features h3 {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -349,6 +352,7 @@ main .section {
 .developments .content-box {
   position: relative;
   width: calc((100% - 30px * 2) / 3);
+  perspective: 400px;
 }
 .developments .content-box:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -370,6 +374,10 @@ main .section {
   background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
+}
+.developments .content-box:hover img {
+  transform: rotateY(360deg);
+  transition: transform 500ms var(--timing-function);
 }
 
 /* Team */
@@ -419,6 +427,13 @@ main .section {
 .team .link:focus {
   color: var(--primary-white-color);
   outline: none;
+}
+.team .content-box {
+  perspective: 800px;
+}
+.team .scene:hover img {
+  transform: rotateY(360deg);
+  transition: transform 500ms var(--timing-function);
 }
 
 /* Clients */
