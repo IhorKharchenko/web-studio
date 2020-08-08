@@ -646,10 +646,9 @@ footer .logo {
   position: relative;
   overflow: hidden;
 }
-.portfolio .thumb::before {
-  margin: 0;
-  padding: 0;
-  content: "";
+.portfolio .overlay {
+  top: 0;
+  left: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -658,8 +657,8 @@ footer .logo {
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
 }
-.portfolio .link:hover .thumb::before,
-.portfolio .link:focus .thumb::before {
+.portfolio .link:hover .overlay,
+.portfolio .link:focus .overlay {
   transform: translateY(0);
 }
 
@@ -671,17 +670,10 @@ footer .logo {
   margin-top: 0;
   margin-bottom: 0;
   width: 322px;
-  height: 168px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   color: var(--primary-white-color);
   outline: none;
-  transform: translate(-50%, 100%);
-  transition: transform 250ms var(--timing-function);
-}
-
-.portfolio .link:hover .description,
-.portfolio .link:focus .description {
   transform: translate(-50%, -50%);
 }
