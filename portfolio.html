@@ -360,16 +360,32 @@
             </li>
           </ul>
         </div>
-        <div class="box subscribe">
-          <p>Подпишитесь на рассылку</p>
-          <a href="" class="button link"
-            >Подписаться
-            <svg class="icon" width="24" height="24">
+        <form class="box js-speaker-form">
+          <div class="form-field">
+            <label for="email">Подпишитесь на рассылку</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+          </div>
+          <button type="submit">
+            Подписаться<svg class="icon" width="24" height="24">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
-          </a>
-        </div>
+          </button>
+        </form>
       </div>
     </footer>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-modal")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
