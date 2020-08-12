@@ -377,6 +377,7 @@ main .section {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  transition: border 250ms var(--timing-function);
 }
 .modal-input + .icon {
   fill: var(--title-text-color);
@@ -384,6 +385,9 @@ main .section {
 }
 .modal-input:focus + .icon {
   fill: var(--accent-color);
+}
+.modal-input:focus {
+  border: 1px solid var(--accent-color);
 }
 .modal-field label {
   margin-bottom: 4px;
@@ -412,11 +416,14 @@ main .section {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  transition: border 250ms var(--timing-function);
 }
 .modal-field::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
+.modal-field textarea:focus {
+  border: 1px solid var(--accent-color);
+}
 .modal .policy {
   display: flex;
   justify-content: center;
@@ -427,8 +434,35 @@ main .section {
 
   color: var(--primary-text-color);
 }
-.policy input {
+.policy .checkbox {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.policy .icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
   margin-right: 7px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  transition: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
+}
+.checkbox:checked + .icon {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url("../images/studio/check.svg");
+  background-size: contain;
+  background-origin: border-box;
 }
 .policy .link {
   font-weight: 400;
@@ -791,6 +825,7 @@ footer .logo {
   outline: none;
   color: var(--accent-color);
   background-color: var(--primary-white-color);
+  cursor: pointer;
 }
 
 .js-speaker-form .icon {
