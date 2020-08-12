@@ -508,22 +508,33 @@
         <b>Оставьте свои данные, мы вам перезвоним</b>
         <div class="modal-field">
           <label for="name">Имя</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" class="modal-input" />
+          <svg class="icon" width="12" height="12">
+            <use href="./images/sprite.svg#person"></use>
+          </svg>
         </div>
         <div class="modal-field">
           <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" />
+          <input type="tel" name="tel" id="tel" class="modal-input" />
+          <svg class="icon" width="12" height="12">
+            <use href="./images/sprite.svg#phone"></use>
+          </svg>
         </div>
         <div class="modal-field">
           <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail" />
+          <input type="email" name="mail" id="mail" class="modal-input" />
+          <svg class="icon" width="12" height="12">
+            <use href="./images/sprite.svg#email"></use>
+          </svg>
         </div>
-        <label for="comment">Комментарий</label>
-        <textarea
-          name="comment"
-          id="comment"
-          placeholder="Введите текст"
-        ></textarea>
+        <div class="modal-field comment">
+          <label for="comment">Комментарий</label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Введите текст"
+          ></textarea>
+        </div>
 
         <div class="policy">
           <input type="checkbox" name="policy" id="policy" />
