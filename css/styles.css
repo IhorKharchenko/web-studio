@@ -345,7 +345,8 @@ main .section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 100%;
+  max-width: 528px;
   /* height: 581px; */
   padding: 40px;
   background-color: var(--primary-white-color);
@@ -793,6 +794,13 @@ footer .logo {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .js-speaker-form button {
