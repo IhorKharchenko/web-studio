@@ -1,0 +1,39 @@
+$features-icons: "antenna", "clock", "diagram", "astronaut";
+
+@each $iconName in $features-icons {
+  .icon-#{$iconName}::before {
+    background-image: url("../../images/studio/#{$iconName}.svg");
+  }
+}
+.features .content-box {
+  width: calc((100% - 30px * 3) / 4);
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $button-bg-color;
+  }
+}
+.features .content-box:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.features h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+.features p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-text-color;
+}

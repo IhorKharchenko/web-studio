@@ -1,0 +1,27 @@
+button {
+  display: inline-block;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 0;
+  border-radius: 4px;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  outline: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  transition: background-color $duration $timing-function,
+    color $duration $timing-function;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $accent-color;
+    background-color: $primary-white-color;
+    cursor: pointer;
+  }
+}

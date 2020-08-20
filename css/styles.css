@@ -22,6 +22,7 @@ html {
   --button-bg-color: #f5f4fa;
   --primary-icon-color: #afb1b8;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
 }
 body {
   background-color: var(--primary-white-color);
@@ -63,6 +64,7 @@ img {
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
+  border: 0;
   border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -71,8 +73,8 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function);
 }
 .button:hover,
 .button:focus {
@@ -94,8 +96,8 @@ img {
   height: 44px;
   border-radius: 50%;
   color: var(--primary-white-color);
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function);
 }
 .social .icon {
   width: 20px;
@@ -165,16 +167,16 @@ header::after {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  transition: color 250ms var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 .site-nav .item + .item {
   margin-left: 50px;
 }
-.site-nav .link.current {
+.link.current {
   position: relative;
   color: var(--accent-color);
 }
-.current::after {
+.link.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -199,7 +201,7 @@ header::after {
   background-repeat: no-repeat;
   background-position: center;
   transform: scaleX(0);
-  transition: transform 250ms var(--timing-function);
+  transition: transform var(--duration) var(--timing-function);
 }
 .site-nav .link:hover::after,
 .site-nav .link:focus::after {
@@ -228,7 +230,7 @@ header::after {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  transition: color 250ms var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 .contact-nav .item + .item {
   margin-left: 30px;
@@ -312,8 +314,8 @@ main .section {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function);
 }
 .hero button:hover,
 .hero button:focus {
@@ -331,7 +333,7 @@ main .section {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity var(--duration) var(--timing-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -374,11 +376,11 @@ main .section {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  transition: border 250ms var(--timing-function);
+  transition: border var(--duration) var(--timing-function);
 }
 .modal-input + .icon {
   fill: var(--title-text-color);
-  transition: fill 250ms var(--timing-function);
+  transition: fill var(--duration) var(--timing-function);
 }
 .modal-input:focus + .icon {
   fill: var(--accent-color);
@@ -413,7 +415,7 @@ main .section {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  transition: border 250ms var(--timing-function);
+  transition: border var(--duration) var(--timing-function);
 }
 .modal-field::placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -450,8 +452,8 @@ main .section {
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
-  transition: background-color 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    border-color var(--duration) var(--timing-function);
 }
 .checkbox:checked + .icon {
   border-color: transparent;
@@ -483,8 +485,8 @@ main .section {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
@@ -524,7 +526,7 @@ main .section {
   color: #000000;
   box-sizing: border-box;
   outline: none;
-  transition: color 250ms var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 .modal-close:hover,
 .modal-close:focus {
@@ -552,16 +554,16 @@ main .section {
   background-color: var(--button-bg-color);
 }
 .icon-antenna::before {
-  background-image: url("../images/studio/antenna1.svg");
+  background-image: url("../images/studio/antenna.svg");
 }
 .icon-clock::before {
-  background-image: url("../images/studio/clock1.svg");
+  background-image: url("../images/studio/clock.svg");
 }
 .icon-diagram::before {
-  background-image: url("../images/studio/diagram1.svg");
+  background-image: url("../images/studio/diagram.svg");
 }
 .icon-astronaut::before {
-  background-image: url("../images/studio/astronaut1.svg");
+  background-image: url("../images/studio/astronaut.svg");
 }
 
 .features h3 {
@@ -678,8 +680,8 @@ main .section {
   border: 1px solid var(--primary-icon-color);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: border-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
+  transition: border-color var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function);
 }
 .clients .icon {
   fill: currentColor;
@@ -732,7 +734,7 @@ footer .logo {
   font-size: 14px;
   line-height: 1.71;
   color: var(--additional-white-color);
-  transition: color 250ms var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 }
 .address .link:hover,
 .address .link:focus {
@@ -817,8 +819,8 @@ footer .logo {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
@@ -833,7 +835,7 @@ footer .logo {
 .js-speaker-form .icon {
   margin-left: 10px;
   fill: currentColor;
-  transition: transform 250ms var(--timing-function) 250ms;
+  transition: transform var(--duration) var(--timing-function) var(--duration);
 }
 .js-speaker-form button:hover .icon,
 .js-speaker-form button:focus .icon {
@@ -865,8 +867,9 @@ footer .logo {
   text-align: center;
   color: var(--title-text-color);
   background-color: var(--button-bg-color);
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
 }
 .btn:hover,
 .btn:focus {
@@ -884,7 +887,7 @@ footer .logo {
 .portfolio .content-box {
   width: calc((100% - 30px * 2) / 3);
   background: var(--primary-white-color);
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow var(--duration) var(--timing-function);
   box-sizing: border-box;
   outline: none;
 }
@@ -946,7 +949,7 @@ footer .logo {
   outline: none;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform var(--duration) var(--timing-function);
 }
 .portfolio .link:hover .overlay,
 .portfolio .link:focus .overlay {
