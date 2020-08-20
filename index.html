@@ -13,7 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
@@ -492,7 +492,14 @@
         <form class="box js-speaker-form">
           <div class="form-field">
             <label for="email">Подпишитесь на рассылку</label>
-            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              autocomplete="off"
+              placeholder="E-mail"
+            />
           </div>
           <button type="submit">
             Подписаться<svg class="icon" width="24" height="24">
@@ -509,21 +516,44 @@
         <b>Оставьте свои данные, мы вам перезвоним</b>
         <div class="modal-field">
           <label for="name">Имя</label>
-          <input type="text" name="name" id="name" class="modal-input" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            pattern="^[a-zA-ZА-Яа-яЁё\s]+$"
+            autocomplete="off"
+            class="modal-input"
+          />
           <svg class="icon" width="12" height="12">
             <use href="./images/sprite.svg#person"></use>
           </svg>
         </div>
         <div class="modal-field">
           <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" class="modal-input" />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            required
+            pattern="[0-9]{10}"
+            autocomplete="off"
+            class="modal-input"
+          />
           <svg class="icon" width="12" height="12">
             <use href="./images/sprite.svg#phone"></use>
           </svg>
         </div>
         <div class="modal-field">
           <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail" class="modal-input" />
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            required
+            autocomplete="off"
+            class="modal-input"
+          />
           <svg class="icon" width="12" height="12">
             <use href="./images/sprite.svg#email"></use>
           </svg>
@@ -533,6 +563,7 @@
           <textarea
             name="comment"
             id="comment"
+            optional
             placeholder="Введите текст"
           ></textarea>
         </div>

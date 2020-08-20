@@ -55,6 +55,12 @@
   &:focus {
     border: 1px solid $accent-color;
   }
+  &:focus:valid {
+    background-color: #00ff00;
+  }
+  &:focus:invalid {
+    background-color: #ff0000;
+  }
 }
 .modal-input + .icon {
   fill: $title-text-color;
