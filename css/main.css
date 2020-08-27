@@ -322,8 +322,8 @@ header::after {
   max-width: 1600px;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/studio/hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -623,19 +623,19 @@ header::after {
 }
 
 .icon-antenna::before {
-  background-image: url("../../images/studio/antenna.svg");
+  background-image: url("../images/studio/antenna.svg");
 }
 
 .icon-clock::before {
-  background-image: url("../../images/studio/clock.svg");
+  background-image: url("../images/studio/clock.svg");
 }
 
 .icon-diagram::before {
-  background-image: url("../../images/studio/diagram.svg");
+  background-image: url("../images/studio/diagram.svg");
 }
 
 .icon-astronaut::before {
-  background-image: url("../../images/studio/astronaut.svg");
+  background-image: url("../images/studio/astronaut.svg");
 }
 
 .features .content-box {

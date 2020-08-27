@@ -2,7 +2,7 @@ $features-icons: "antenna", "clock", "diagram", "astronaut";
 
 @each $iconName in $features-icons {
   .icon-#{$iconName}::before {
-    background-image: url("../../images/studio/#{$iconName}.svg");
+    background-image: url("../images/studio/#{$iconName}.svg");
   }
 }
 .features .content-box {
