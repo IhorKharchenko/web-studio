@@ -13,6 +13,8 @@ header {
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
