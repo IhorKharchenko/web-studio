@@ -1,15 +1,17 @@
 .contact-nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  // display: flex;
+  // align-items: center;
+  // margin-left: auto;
+  margin-bottom: 60px;
 }
 
 .contact-nav .link {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: $primary-text-color;
   transition: color $duration $timing-function;
@@ -18,9 +20,17 @@
     color: $accent-color;
     outline: none;
   }
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contact-nav .item + .item {
-  margin-left: 30px;
+  margin-top: 16px;
 }
 
 .contact-nav .icon {

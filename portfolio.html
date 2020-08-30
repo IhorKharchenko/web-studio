@@ -19,40 +19,53 @@
   <body>
     <header>
       <div class="container main-nav">
-        <nav class="site-nav">
-          <a class="logo" href="./index.html"
-            ><span class="web">Web </span>Studio</a
-          >
-          <ul class="list">
+        <a class="logo" href="./index.html"
+          ><span class="web">Web </span>Studio</a
+        >
+        <div class="menu-container" data-menu>
+          <nav class="site-nav">
+            <ul class="list">
+              <li class="item">
+                <a class="link" href="./index.html">Студия</a>
+              </li>
+              <li class="item">
+                <a class="link current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="item">
+                <a class="link" href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact-nav list">
             <li class="item">
-              <a class="link" href="./index.html">Студия</a>
+              <a class="link icon-envelope" href="mailto:info@devstudio.com"
+                ><svg class="icon" width="16" height="11">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
             <li class="item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="item">
-              <a class="link" href="./contacts.html">Контакты</a>
+              <a class="link icon-smartphone" href="tel:+380961111111">
+                <svg class="icon" width="10" height="16">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contact-nav list">
-          <li class="item">
-            <a class="link icon-envelope" href="mailto:info@devstudio.com"
-              ><svg class="icon" width="16" height="11">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a class="link icon-smartphone" href="tel:+380961111111">
-              <svg class="icon" width="10" height="16">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <button class="menu-button" type="button" data-menu-button>
+          <svg
+            width="40"
+            height="40"
+            aria-expanded="false"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+            <use class="icon-cross" href="./images/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -291,14 +304,18 @@
     <footer>
       <div class="container flexbox">
         <div class="box address">
-          <a class="logo" href="./index.html"><span class="web">Web </span>Studio</a>
+          <a class="logo" href="./index.html"
+            ><span class="web">Web </span>Studio</a
+          >
           <address>
             <ul class="list">
               <li>
                 <p>г. Киев, пр-т Леси Украинки, 26</p>
               </li>
               <li>
-                <a class="link" href="mailto:info@example.com">info@example.com</a>
+                <a class="link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
               <li>
                 <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
@@ -310,27 +327,47 @@
           <p>присоединяйтесь</p>
           <ul class="list social">
             <li>
-              <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a
+                class="link"
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="icon">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><svg class="icon">
+              <a
+                class="link"
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="icon">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><svg class="icon">
+              <a
+                class="link"
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="icon">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-    
+
             <li>
-              <a class="link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><svg class="icon">
+              <a
+                class="link"
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="icon">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
@@ -340,9 +377,16 @@
         <form class="box js-speaker-form">
           <div class="form-field">
             <label for="email">Подпишитесь на рассылку</label>
-            <input type="email" name="email" id="email" required autocomplete="off" placeholder="E-mail" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              autocomplete="off"
+              placeholder="E-mail"
+            />
           </div>
-          <button type="submit">
+          <button class="button" type="submit">
             Подписаться<svg class="icon" width="24" height="24">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
@@ -350,6 +394,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script>
       (() => {
         document

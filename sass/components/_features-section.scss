@@ -5,8 +5,14 @@ $features-icons: "antenna", "clock", "diagram", "astronaut";
     background-image: url("../images/studio/#{$iconName}.svg");
   }
 }
+.features .flexbox {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  outline: 1px solid blue;
+}
 .features .content-box {
-  width: calc((100% - 30px * 3) / 4);
   &::before {
     content: "";
     display: block;
@@ -15,9 +21,34 @@ $features-icons: "antenna", "clock", "diagram", "astronaut";
     background-position: center;
     background-color: $button-bg-color;
   }
-}
-.features .content-box:not(:nth-child(4n)) {
-  margin-right: 30px;
+  outline: 1px solid red;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 30px * 3) / 4);
+  }
+  &:not(:last-child) {
+    @media screen and (max-width: $tablet - 1px) {
+      margin-bottom: 30px;
+    }
+  }
+  &:not(:nth-child(2n)) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
+    }
+  }
+  &:not(:nth-child(4n)) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (max-width: $desktop - 1px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .features h3 {
@@ -28,6 +59,9 @@ $features-icons: "antenna", "clock", "diagram", "astronaut";
   line-height: 1.14;
   text-transform: uppercase;
   color: $title-text-color;
+  @media screen and (max-width: $tablet - 1px) {
+    text-align: center;
+  }
 }
 .features p {
   margin-top: 0;

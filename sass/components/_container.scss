@@ -1,4 +1,5 @@
 .container {
+  // position: relative;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -12,6 +13,7 @@
   @media screen and (min-width: $desktop) {
     width: $desktop;
   }
+  outline: 1px solid green;
 }
 .container > .title {
   margin-top: 0;

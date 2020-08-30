@@ -1,5 +1,8 @@
 .logo {
-  // margin-right: 85px;
+  display: inline-block;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
   text-decoration: none;
   color: #000000;
   font-family: Raleway, sans-serif;
@@ -9,7 +12,13 @@
   &:focus {
     outline: none;
   }
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   @media screen and (min-width: $desktop) {
+    margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;
   }
