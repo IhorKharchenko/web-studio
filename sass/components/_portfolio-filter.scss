@@ -1,0 +1,44 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+.filter li {
+  margin-bottom: 15px;
+}
+.filter li:not(:last-child) {
+  margin-right: 8px;
+}
+.btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: 0;
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: $title-text-color;
+  background-color: $button-bg-color;
+  transition: background-color $duration $timing-function,
+    color $duration $timing-function, box-shadow $duration $timing-function;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $accent-color;
+    color: $primary-white-color;
+    outline: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

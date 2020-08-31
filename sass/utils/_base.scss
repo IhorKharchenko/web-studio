@@ -37,8 +37,14 @@ img {
 // }
 
 main .section:not(.features) {
-  padding-bottom: 95px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 95px;
+  }
 }
 main .section {
-  padding-top: 95px;
+  padding-top: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 95px;
+  }
 }
