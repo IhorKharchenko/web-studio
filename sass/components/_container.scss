@@ -13,14 +13,16 @@
   @media screen and (min-width: $desktop) {
     width: $desktop;
   }
-  outline: 1px solid green;
 }
 .container > .title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
 }

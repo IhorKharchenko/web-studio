@@ -27,9 +27,16 @@ header {
   display: inline-flex;
   padding: 0;
   margin: 10px 15px 10px 0;
-
+  color: $title-text-color;
   border: none;
   background-color: transparent;
+  fill: currentColor;
+  transition: color $duration $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: pointer;
+  }
 }
 
 .menu-button .icon-cross {
