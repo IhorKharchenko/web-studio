@@ -1,4 +1,4 @@
-.portfolio .flexbox {
+.portfolio.flexbox {
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -20,6 +20,21 @@
   }
   @media screen and (min-width: $desktop) {
     width: calc((100% - 30px * 2) / 3);
+  }
+  &:not(:nth-child(2n)) {
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      margin-right: 30px;
+    }
+  }
+  &:not(:nth-child(3n)) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (max-width: $desktop - 1px) {
+      margin-bottom: 30px;
+    }
   }
 }
 .portfolio .link {

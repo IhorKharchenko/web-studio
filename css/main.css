@@ -1423,7 +1423,7 @@ footer .logo {
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio .flexbox {
+  .portfolio.flexbox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1459,6 +1459,24 @@ footer .logo {
 @media screen and (min-width: 1200px) {
   .portfolio .content-box {
     width: calc((100% - 30px * 2) / 3);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio .content-box:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio .content-box:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio .content-box:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
   }
 }
 
