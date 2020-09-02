@@ -1,6 +1,5 @@
 .logo {
   display: inline-block;
-
   margin-top: 16px;
   margin-bottom: 16px;
   text-decoration: none;
@@ -13,9 +12,10 @@
     outline: none;
   }
   @media screen and (min-width: $tablet) {
+    display: flex;
     margin-right: 88px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   @media screen and (min-width: $desktop) {
     margin-right: 93px;

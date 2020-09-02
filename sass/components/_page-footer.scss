@@ -3,7 +3,6 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $footer-background-color;
-  // text-align: center;
 }
 
 footer .flexbox {
@@ -25,6 +24,7 @@ footer .flexbox {
   }
 }
 footer .logo {
+  display: inline-block;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 20px;

@@ -14,7 +14,9 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-
+body.modal-open {
+  overflow: hidden;
+}
 .list {
   padding: 0;
   margin: 0;
@@ -30,11 +32,6 @@ img {
 .link {
   text-decoration: none;
 }
-
-// .flexbox {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
 
 main .section:not(.features) {
   padding-bottom: 60px;

@@ -19,7 +19,7 @@
     <header>
       <div class="container main-nav">
         <a class="logo" href="./index.html"
-          ><span class="web">Web </span>Studio</a
+          ><span class="web">Web</span>Studio</a
         >
         <div class="menu-container" id="menu-container" data-menu>
           <nav class="site-nav">
@@ -439,7 +439,7 @@
       <div class="container flexbox">
         <div class="box address">
           <a class="logo" href="./index.html"
-            ><span class="web">Web </span>Studio</a
+            ><span class="web">Web</span>Studio</a
           >
           <address>
             <ul class="list">
@@ -605,33 +605,7 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-    <script>
-      (() => {
-        document
-          .querySelector(".js-speaker-form")
-          .addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-            e.currentTarget.reset();
-          });
-      })();
-    </script>
-    <script>
-      (() => {
-        document
-          .querySelector(".js-speaker-modal")
-          .addEventListener("submit", (y) => {
-            y.preventDefault();
-
-            new FormData(y.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-            y.currentTarget.reset();
-          });
-      })();
-    </script>
+    <script src="./js/subscribe.js"></script>
+    <script src="./js/modal-submit.js"></script>
   </body>
 </html>

@@ -18,33 +18,3 @@ header {
     align-items: center;
   }
 }
-
-.menu-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: inline-flex;
-  padding: 0;
-  margin: 10px 15px 10px 0;
-  color: $title-text-color;
-  border: none;
-  background-color: transparent;
-  fill: currentColor;
-  transition: color $duration $timing-function;
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    cursor: pointer;
-  }
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-.menu-button.is-open .icon-menu {
-  display: none;
-}
