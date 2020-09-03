@@ -13,7 +13,77 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/studio/hero.jpg");
+    url("../images/studio/hero-mobile.jpg");
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/studio/hero-tablet.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/studio/hero-desktop.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/studio/hero-mobile@2x.jpg");
+  }
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/studio/hero-mobile@3x.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+    screen and (min-resolution: 192dpi) and (min-width: $tablet),
+    screen and (min-resolution: 2dppx) and (min-width: $tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/studio/hero-tablet@2x.jpg");
+  }
+  @media screen and (min-device-pixel-ratio: 3) and (min-width: $tablet),
+    screen and (min-resolution: 288dpi) and (min-width: $tablet),
+    screen and (min-resolution: 3dppx) and (min-width: $tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/studio/hero-tablet@3x.jpg");
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+    screen and (min-resolution: 192dpi) and (min-width: $desktop),
+    screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/studio/hero-desktop@2x.jpg");
+  }
+  @media screen and (min-device-pixel-ratio: 3) and (min-width: $desktop),
+    screen and (min-resolution: 288dpi) and (min-width: $desktop),
+    screen and (min-resolution: 3dppx) and (min-width: $desktop) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/studio/hero-desktop@3x.jpg");
+  }
 
   background-repeat: no-repeat;
   background-size: cover;
